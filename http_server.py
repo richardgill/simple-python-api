@@ -12,5 +12,5 @@ def hello():
 if 'PYTHON_ENV' in os.environ:
   print('Running in prod :serious_face:')
   run(host='0.0.0.0', port=os.environ.PORT)
-else
+else:
   run(host='localhost', port=8080, debug=True)
